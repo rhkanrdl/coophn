@@ -1,0 +1,37 @@
+<svg id="그룹_1127" data-name="그룹 1127" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.92 24.052">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ffac38;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="그룹_1045" data-name="그룹 1045" transform="translate(3.513 6.906)">
+    <g id="그룹_1041" data-name="그룹 1041">
+      <path id="패스_4378" data-name="패스 4378" class="cls-1" d="M22.84,24.5H12.451a.751.751,0,0,1,0-1.5H22.87a.743.743,0,0,1,.751.751A.789.789,0,0,1,22.84,24.5Z" transform="translate(-11.7 -23)"/>
+    </g>
+    <g id="그룹_1042" data-name="그룹 1042" transform="translate(0 3.603)">
+      <path id="패스_4379" data-name="패스 4379" class="cls-1" d="M22.84,36.5H12.451a.751.751,0,0,1,0-1.5H22.87a.743.743,0,0,1,.751.751A.789.789,0,0,1,22.84,36.5Z" transform="translate(-11.7 -35)"/>
+    </g>
+    <g id="그룹_1043" data-name="그룹 1043" transform="translate(0 7.207)">
+      <path id="패스_4380" data-name="패스 4380" class="cls-1" d="M22.84,48.5H12.451a.751.751,0,0,1,0-1.5H22.87a.743.743,0,0,1,.751.751A.789.789,0,0,1,22.84,48.5Z" transform="translate(-11.7 -47)"/>
+    </g>
+    <g id="그룹_1044" data-name="그룹 1044" transform="translate(0 10.81)">
+      <path id="패스_4381" data-name="패스 4381" class="cls-1" d="M22.84,60.5H12.451a.751.751,0,1,1,0-1.5H22.87a.743.743,0,0,1,.751.751A.789.789,0,0,1,22.84,60.5Z" transform="translate(-11.7 -59)"/>
+    </g>
+  </g>
+  <g id="그룹_1049" data-name="그룹 1049">
+    <g id="그룹_1048" data-name="그룹 1048">
+      <g id="그룹_1046" data-name="그룹 1046" transform="translate(0 2.702)">
+        <path id="패스_4382" data-name="패스 4382" class="cls-2" d="M18.467,30.349H.751A.743.743,0,0,1,0,29.6V9.751A.743.743,0,0,1,.751,9H18.467a.743.743,0,0,1,.751.751V29.6A.743.743,0,0,1,18.467,30.349ZM1.5,28.848H17.716V10.5H1.5Z" transform="translate(0 -9)"/>
+      </g>
+      <g id="그룹_1047" data-name="그룹 1047" transform="translate(2.702)">
+        <path id="패스_4383" data-name="패스 4383" class="cls-2" d="M27.467,21.349h-2.7a.751.751,0,1,1,0-1.5h1.952V1.5H10.5V3.453a.751.751,0,1,1-1.5,0V.751A.743.743,0,0,1,9.751,0H27.467a.743.743,0,0,1,.751.751V20.6A.743.743,0,0,1,27.467,21.349Z" transform="translate(-9)"/>
+      </g>
+    </g>
+  </g>
+</svg>

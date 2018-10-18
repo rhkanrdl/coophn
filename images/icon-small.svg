@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.725 7.35">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="그룹_581" data-name="그룹 581" transform="translate(-337.45 -1210.825)">
+    <g id="그룹_519" data-name="그룹 519" transform="translate(985.967 131.78) rotate(45)">
+      <g id="사각형_218" data-name="사각형 218" class="cls-1" transform="translate(308 1218)">
+        <rect class="cls-2" width="5.197" height="1.485" rx="0.742"/>
+        <rect class="cls-3" x="0.5" y="0.5" width="4.197" height="0.485" rx="0.242"/>
+      </g>
+      <g id="사각형_219" data-name="사각형 219" class="cls-1" transform="translate(311.712 1223.197) rotate(-90)">
+        <rect class="cls-2" width="5.197" height="1.485" rx="0.742"/>
+        <rect class="cls-3" x="0.5" y="0.5" width="4.197" height="0.485" rx="0.242"/>
+      </g>
+    </g>
+    <g id="그룹_520" data-name="그룹 520" transform="translate(981.967 131.78) rotate(45)">
+      <g id="사각형_218-2" data-name="사각형 218" class="cls-1" transform="translate(308 1218)">
+        <rect class="cls-2" width="5.197" height="1.485" rx="0.742"/>
+        <rect class="cls-3" x="0.5" y="0.5" width="4.197" height="0.485" rx="0.242"/>
+      </g>
+      <g id="사각형_219-2" data-name="사각형 219" class="cls-1" transform="translate(311.712 1223.197) rotate(-90)">
+        <rect class="cls-2" width="5.197" height="1.485" rx="0.742"/>
+        <rect class="cls-3" x="0.5" y="0.5" width="4.197" height="0.485" rx="0.242"/>
+      </g>
+    </g>
+  </g>
+</svg>
