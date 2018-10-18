@@ -584,7 +584,7 @@ body {
                             .rem(padding, 0 20 0 0);
                             a {
                                 color: #eee;
-                                .rem(font-size, 14);
+                                .rem(font-size, 16);
                             }
                         }
 
@@ -605,7 +605,7 @@ body {
                                 }
 
                                 a {
-                                    .rem(font-size, 12);
+                                    .rem(font-size, 14);
                                     color: #ccc;
                                 }
                             }
@@ -2686,6 +2686,1216 @@ body {
                     }
                 }
 
+                &.member {
+                    .container {
+                        .center;
+                        word-break:keep-all;
+
+                        @media all and (min-width: 1200px) {
+                            .left;
+                        }
+
+                        h3 {
+                            .rem(font-size, 22);
+                            .rem(margin, 0 0 20);
+                        }
+
+                        h4 {
+                            .rem(font-size, 18);
+                            .rem(margin, 0 0 10);
+                        }
+
+                        &>p.text {
+                            .rem(font-size, 16);
+                            .rem(margin, 0 0 10);
+                        }
+
+                        div.gray-box {
+                            background:#f5f5f5;
+                            width:100%;
+                            .rem(padding, 20);
+                            .rem(margin, 0 0 30);
+                            word-break:keep-all;
+                            .rem(font-size, 16);
+
+                            @media all and (min-width: 1200px) {
+                                padding:30px;
+                            }
+
+
+                        }
+
+                        div.ica {
+
+                            dl {
+                                padding:0;
+                                .rem(max-width, 320);
+                                .rem(margin, 30 auto 20);
+
+                                @media all and (min-width: 1200px) {
+                                    .relative;
+                                    max-width:100%;
+                                    margin:70px 0;
+                                    width:100%;
+                                    height:750px;
+                                    background:url("../images/w-step.svg") no-repeat center / 530.69px 477.44px;
+                                }
+    
+
+                                dt {
+                                    .block;
+                                    .rem(margin, 0 auto 20);
+                                    .rem(padding, 60 0 0);
+                                    .rem(width, 228);
+                                    .rem(height, 228);
+                                    border-radius:50%;
+                                    background:#BCE2E3;
+                                    .center;
+
+                                    @media all and (min-width: 1200px) {
+                                        background:none;
+                                        width:267.4px;
+                                        height:267.4px;
+                                        .absolute;
+                                        left:50%;
+                                        margin-left:-133.7px;
+                                        top:300px;
+                                    }
+        
+
+                                    h3 {
+                                        .rem(font-size, 25);
+                                        .mapazero;
+                                        line-height:1.4;
+
+                                        small {
+                                            .block;
+                                            .normal;
+                                            .rem(font-size, 16);
+                                            .rem(margin, 0 0 6);
+                                        }
+
+                                        strong {
+                                            .block;
+                                        }
+                                    }
+                                }
+
+                                dd {
+                                    .center;
+                                    padding:0;
+                                    .rem(margin, 120 0 10);
+
+                                    @media all and (min-width: 1200px) {
+                                        margin:0;
+                                    }
+
+                                    h4 {
+                                        .relative;
+                                        .rem(font-size, 18);
+                                        .rem(margin, 0 0 10);
+
+                                        small {
+                                            .block;
+                                            .absolute;
+                                            left:50%;
+                                            .rem(margin-left, -35.48);
+                                            .rem(top, -114);
+                                            .rem(width, 70.96);
+                                            .rem(height, 104.03);
+                                            .rem(font-size, 27);
+                                            .rem(padding, 48 0 0);
+                                        }
+                                    }
+
+                                    &>ul {
+                                        .no-list;
+                                        .mapazero;
+                                        .rem(font-size, 16);
+
+                                        &>li {
+                                            .relative;
+                                            .rem(margin, 0 0 10);
+
+                                            &:before {
+                                                content:"";
+                                                .block;
+                                                .rem(width, 6.8);
+                                                .rem(height, 6.05);
+                                                .rem(margin, 0 auto 4);
+                                                background:url("../images/m-step-li.svg") no-repeat center / 100% 100%;
+
+                                                @media all and (min-width: 1200px) {
+                                                    .none;
+                                                }
+                                            }
+
+                                            p {
+                                                margin:0;
+                                            }
+
+                                            ol {
+                                                .left;
+                                                .rem(font-size, 14);
+                                                .rem(padding, 0 0 0 16);
+
+                                                li {
+                                                    .rem(margin, 0 0 4);
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.step01 {
+                                        h4 {
+                                            small {
+                                                background:url("../images/m-step01.svg") no-repeat center / 100% 100%;
+
+                                                @media all and (min-width: 1200px) {
+                                                    background:none;
+                                                    top:auto;
+                                                    bottom:-180px;
+                                                }
+                    
+                                            }
+                                        }
+                                    }
+
+                                    &.step02 {
+
+                                        @media all and (min-width: 1200px) {
+                                            .absolute;
+                                            left:50%;
+                                            top:80px;
+                                            margin-left:220px;
+                                            .left;
+                                        }
+
+                                        h4 {
+                                            small {
+                                                background:url("../images/m-step02.svg") no-repeat center / 100% 100%;
+
+                                                @media all and (min-width: 1200px) {
+                                                    background:none;
+                                                    top:auto;
+                                                    left:-38px;
+                                                    bottom:-168px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.step03 {
+
+                                        @media all and (min-width: 1200px) {
+                                            .absolute;
+                                            left:50%;
+                                            top:320px;
+                                            margin-left:310px;
+                                            .left;
+                                        }
+
+                                        h4 {
+                                            small {
+                                                background:url("../images/m-step03.svg") no-repeat center / 100% 100%;
+
+                                                @media all and (min-width: 1200px) {
+                                                    background:none;
+                                                    top:auto;
+                                                    left:-60px;
+                                                    bottom:-90px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.step04 {
+
+
+                                        @media all and (min-width: 1200px) {
+                                            .absolute;
+                                            left:50%;
+                                            top:620px;
+                                            margin-left:60px;
+                                            .left;
+                                        }
+
+                                        h4 {
+                                            small {
+                                                background:url("../images/m-step04.svg") no-repeat center / 100% 100%;
+
+                                                @media all and (min-width: 1200px) {
+                                                    background:none;
+                                                    top:-124px;
+                                                    left:120px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.step05 {
+
+                                        @media all and (min-width: 1200px) {
+                                            .absolute;
+                                            left:50%;
+                                            top:620px;
+                                            margin-left:-320px;
+                                            .right;
+                                        }
+
+                                        h4 {
+                                            small {
+                                                background:url("../images/m-step05.svg") no-repeat center / 100% 100%;
+
+                                                @media all and (min-width: 1200px) {
+                                                    background:none;
+                                                    top:-124px;
+                                                    left:138px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.step06 {
+
+                                        @media all and (min-width: 1200px) {
+                                            .absolute;
+                                            left:50%;
+                                            top:320px;
+                                            margin-left:-530px;
+                                            .right;
+                                        }
+
+                                        h4 {
+                                            small {
+                                                background:url("../images/m-step06.svg") no-repeat center / 100% 100%;
+
+                                                @media all and (min-width: 1200px) {
+                                                    background:none;
+                                                    top:14px;
+                                                    left:280px;
+                                                }
+                                            }
+                                        }
+                                    }
+
+                                    &.step07 {
+                                        .block;
+
+                                        @media all and (min-width: 1200px) {
+                                            .absolute;
+                                            left:50%;
+                                            top:80px;                                            margin-left:-410px;
+                                            .right;
+                                        }
+
+                                        h4 {
+                                            small {
+                                                background:url("../images/m-step07.svg") no-repeat center / 100% 100%;
+
+                                                @media all and (min-width: 1200px) {
+                                                    background:none;
+                                                    top:90px;
+                                                    left:230px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                &.join {
+                    background:#F1F1F1;
+
+                    .container {
+                        .rem(padding, 30 10);
+
+                        h3 {
+                            .rem(font-size, 22);
+                            .rem(margin, 0 0 10);
+                        }
+
+                        &>p.text {
+                            .rem(font-size, 16);
+                            .rem(margin, 0 0 10);
+                        }
+
+                        ul.steps {
+                            margin:20px auto;
+                            padding:0;
+                            .no-list;
+                            background:url("../images/m-join.svg") no-repeat center / 100% 100%;
+                            .rem(width, 198.15);
+                            .rem(height, 992.44);
+                            .center;
+
+                            @media all and (min-width: 1200px) {
+                                margin:20px auto 60px;
+                                width:846.16px;
+                                height:253.3px;
+                                background:url("../images/w-join.svg") no-repeat center / 100% 100%;
+                                .zero;
+
+                            }
+
+                            li {
+                                .rem(font-size, 18);
+                                line-height:1.4;
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                    width:calc(~"100% / 5");
+                                    font-size:18px;
+
+                                }
+
+                                &.step01 {
+                                    .rem(padding-top, 140);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding-top:236px;
+                                    }
+                                }
+
+                                &.step02 {
+                                    .rem(padding-top, 146);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding-top:236px;
+                                    }
+                                }
+
+                                &.step03 {
+                                    .rem(padding-top, 146);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding-top:236px;
+                                    }
+                                }
+
+                                &.step04 {
+                                    .rem(padding-top, 146);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding-top:236px;
+                                    }
+                                }
+
+                                &.step05 {
+                                    .left;
+                                    .rem(padding, 106 0 0 20);
+
+                                    @media all and (min-width: 1200px) {
+                                        .center;
+                                        padding-left:0;
+                                        padding-top:236px;
+                                    }
+                                }
+
+                                strong {
+                                    .normal;
+                                    .block;
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                    }
+                                }
+                            }
+                        }
+
+                        ul.info {
+                            padding:0;
+                            .rem(margin, 20 0 0);
+                            .no-list;
+
+                            li {
+                                .relative;
+                                .rem(padding, 0 0 6 14);
+                                .rem(font-size, 16);
+                                word-break:keep-all;
+                                
+                                &::before {
+                                    content:"";
+                                    .block;
+                                    .absolute;
+                                    left:0;
+                                    .rem(top, 8);
+                                    .rem(width, 6.8);
+                                    .rem(height, 6.05);
+                                    .rem(margin, 0 auto 4);
+                                    background:url("../images/m-step-li.svg") no-repeat center / 100% 100%;
+                                    transform: rotate(270deg);
+
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+
+                &.location {
+                    .container {
+
+                        div#map {
+                            .rem(height, 220);
+                            background:#ccc;
+                            .rem(margin, 0 0 30);
+
+                            @media all and (min-width: 1200px) {
+                                height:400px;
+                                margin:0 0 40px;
+                            }
+                        }
+
+                        dl {
+                            .mapazero;
+
+                            dt {
+                                .rem(font-size, 18);
+                                .rem(width, 100);
+                                float:left;
+                            }
+
+                            dd {
+                                .rem(font-size, 16);
+                                .rem(min-height, 32);
+                                .rem(padding, 0 0 6);
+                            }
+                        }
+                    }
+                }
+
+                &.sponsor {
+                    .container {
+                        .center;
+                    
+                        h3 {
+                            .rem(font-size, 24);
+                            .rem(margin, 0 0 10);
+
+                            @media all and (min-width: 1200px) {
+                                font-size:26px;
+                            }
+
+                            small {
+                                font-size:inherit;
+                                .block;
+                            }
+
+                            u {
+                                text-decoration:none;
+                                .block;
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                }
+                            }
+                        }
+
+                        p.text {
+                            word-break:keep-all;
+                            .rem(margin, 0 0 10);
+                            .rem(font-size, 16);
+
+                            u {
+                                .block;
+                                text-decoration:none;
+    
+                            }
+                        }
+
+                        ul {
+                            .no-list;
+                            padding:0;
+                            .rem(margin, 50 0);
+                            .zero;
+
+                            li {
+                                .rem(margin, 0 0 30);
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                    .top;
+                                    width:calc(~"100% / 5");
+                                    border-right:1px solid #eee;
+                                    min-height:250px;
+
+                                    &:last-child {
+                                        border:none;
+                                    }
+                                }
+
+                                h4 {
+                                    .rem(width, 112);
+                                    .rem(height, 112);
+                                    .rem(padding, 76 0 0);
+                                    border-radius:50%;
+                                    .rem(margin, 0 auto 10);
+                                    .drop-shadow();
+                                    .rem(font-size, 16);
+
+                                    @media all and (min-width: 1200px) {
+                                        width:142px;
+                                        height:142px;
+                                        padding:100px 0 0;
+                                        font-size:18px;
+                                        margin:0 auto 20px;
+                                    }
+                                }
+
+                                p {
+                                    .rem(font-size, 14);
+                                    margin:0;
+                                }
+
+                                &:nth-child(1) {
+                                    h4 {
+                                        background:url("../images/sponsor01.svg") no-repeat center / 100% 100%;
+                                    }
+                                }
+
+                                &:nth-child(2) {
+                                    h4 {
+                                        background:url("../images/sponsor02.svg") no-repeat center / 100% 100%;
+                                    }
+                                }
+
+                                &:nth-child(3) {
+                                    h4 {
+                                        background:url("../images/sponsor03.svg") no-repeat center / 100% 100%;
+                                    }
+                                }
+
+                                &:nth-child(4) {
+                                    h4 {
+                                        background:url("../images/sponsor04.svg") no-repeat center / 100% 100%;
+                                    }
+                                }
+
+                                &:nth-child(5) {
+                                    h4 {
+                                        background:url("../images/sponsor05.svg") no-repeat center / 100% 100%;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        dl {
+                            .rem(margin, 0 0 30);
+                            .rem(padding, 60 30 30);
+                            .rem(border-radius, 30);
+                            .relative;
+                            background:#f4f4f4;
+
+                            @media all and (min-width: 1200px) {
+                                padding:0;
+                            }
+
+                            dt {
+                                .block;
+                                .absolute;
+                                .rem(top, -30);
+                                .rem(height, 60);
+                                .rem(font-size, 18);
+                                .rem(line-height, 60);
+                                .rem(left, 60);
+                                .rem(right, 60);
+                                .rem(padding-left, 60);
+                                .rem(border-radius, 30);
+                                background:#BCE2E3;
+
+                                @media all and (min-width: 1200px) {
+                                    float:left;
+                                    .relative;
+                                    top:0;
+                                    left:0;
+                                    width: 200px;
+                                    .mapazero;
+                                    padding-left:60px;
+                                    line-height:60px;
+                                }
+
+                                &::before {
+                                    content:"";
+                                    .block;
+                                    .absolute;
+                                    left:50%;
+                                    .rem(top, -6);
+                                    .rem(margin-left, -70);
+                                    .rem(width, 58.47);
+                                    .rem(height, 45.47);
+
+                                    background:url("../images/icon-bank.svg") no-repeat center / 100% 100%;
+                                }
+                            }
+
+                            dd {
+                                .mapazero;
+                                .rem(font-size, 16);
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                    line-height:60px;
+                                    margin-right:10px;
+                                    .top;
+                                }
+
+                                u {
+                                    .block;
+                                    .rem(width, 149.6);
+                                    .rem(height, 20.13);
+                                    .rem(margin, 0 auto 6);
+                                    background:url("../images/logo-nh.svg") no-repeat center / 100% 100%;
+                                    .zero;
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        .relative;
+                                        top:14px;
+                                        margin:0 10px 0 0;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        p.attention {
+                            .left;
+                            .relative;
+                            .rem(font-size, 16);
+                            .rem(padding, 0 0 0 14);
+
+                            &::before {
+                                content:"*";
+                                .absolute;
+                                left:0;
+                                .rem(top, 4);
+                            }
+                        }
+                    }
+                }
+
+                &.ci {
+                    .container {
+
+                        div.gray-box {
+                            background:#f5f5f5;
+                            width:100%;
+                            .rem(padding, 20);
+                            .rem(margin, 0 0 30);
+                            word-break:keep-all;
+                            .rem(font-size, 16);
+
+                            @media all and (min-width: 1200px) {
+                                padding:30px;
+                            }
+
+                            h3 {
+                                .rem(font-size,  22);
+                                .rem(margin, 0 0 20px);
+
+                                small {
+                                    .block;
+                                    .rem(font-size, 18);
+                                    .normal;
+                                }
+                            }
+
+                            p.symbol {
+                                .block;
+                                .rem(width, 220);
+                                .rem(height, 220);
+                                .rem(margin, 20 auto);
+                                .drop-shadow();
+                                .zero;
+                                border-radius:50%;
+                                background:url("../images/symbol.svg") no-repeat #fff center / 100% 100%;
+
+                                @media all and (min-width: 1200px) {
+                                    width: 337px;
+                                    height: 337px;
+                                    margin:0;
+                                    .absolute;
+                                    left:60px;
+                                    top:130px;
+                                }
+                            }
+
+                            h4 {
+                                .rem(font-size, 18);
+                                .rem(margin, 30 0 10);
+
+                                @media all and (min-width: 1200px) {
+                                    margin:30px 0 10px 440px;
+                                }
+
+                                &.wing {
+                                    &::before {
+                                        .block;
+                                        content:"";
+                                        .rem(width, 44.5);
+                                        .rem(height, 25.3);
+                                        .rem(margin, 0 0 4);
+                                        background:url("../images/symbol-wing.svg") no-repeat center / 100% 100%;
+
+                                    }
+                                }
+
+                                &.txt {
+                                    &::before {
+                                        .block;
+                                        content:"";
+                                        .rem(width, 97);
+                                        .rem(height, 29);
+                                        .rem(margin, 0 0 4);
+                                        background:url("../images/symbol-txt.svg") no-repeat center / 100% 100%;
+
+                                    }
+                                }
+                            }
+
+                            p.text {
+                                margin:0;
+                                .rem(font-size, 16);
+
+                                @media all and (min-width: 1200px) {
+                                    margin:0 0 0 440px;
+                                }
+
+
+                                &.num {
+                                    .relative;
+                                    .rem(padding-left, 28);
+
+                                    strong {
+                                        .absolute;
+                                        left:0;
+                                        top:0;
+                                        .normal;
+                                    }
+                                }
+
+                                &.inline-text {
+                                    .relative;
+                                    .rem(padding, 0 0 10px 100);
+
+                                    @media all and (min-width: 1200px) {
+                                        padding: 0 0 10px 130px;
+                                    }
+
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+
+                                        &.two {
+                                            margin:0 0 0 40px;
+                                        }
+                                    }
+    
+
+                                    strong {
+                                        .absolute;
+                                        left:0;
+                                        top:0;
+                                        .rem(border-radius, 6);
+                                        .block;
+                                        .rem(width, 90);
+                                        .rem(line-height, 46);
+                                        .center;
+
+                                        @media all and (min-width: 1200px) {
+                                            width:120px;
+                                        }
+
+                                        &.color01 {
+                                            background:#595757;
+                                            color:#fff;
+                                        }
+
+                                        &.color02 {
+                                            background:#6ECBB8;
+                                        }
+                                    }
+
+                                    span {
+                                        .block;
+                                        .rem(font-size, 14);
+                                    }
+                                }
+
+
+                            }
+
+
+                        }
+
+                        div.white-box {
+                            width:100%;
+                            .rem(padding, 20 0);
+                            .rem(margin, 0 0 30);
+                            word-break:keep-all;
+                            .rem(font-size, 16);
+
+                            @media all and (min-width: 1200px) {
+                                padding:0;
+                            }
+
+                            h3 {
+                                .rem(font-size,  22);
+                                .rem(margin, 0 0 20px);
+
+                                small {
+                                    .block;
+                                    .rem(font-size, 18);
+                                    .normal;
+                                }
+                            }
+
+
+                            p.text {
+                                margin:0;
+                                .rem(font-size, 16);
+                                .relative;
+
+                                @media all and (min-width: 1200px) {
+                                    min-height:190px;
+                                }
+                                
+
+                                &::before {
+                                    content:"";
+                                    .block;
+                                    .rem(width, 216.85);
+                                    .rem(height, 149.75);
+                                    .rem(margin, 0 auto 20);
+                                    background:url("../images/narae.svg") no-repeat center / 100% 100%;
+
+                                    @media all and (min-width: 1200px) {
+                                        width:376.2px;
+                                        height:259.78px;
+                                        .absolute;
+                                        right:0;
+                                        top:-60px;
+                                    }
+                                }
+
+                                span {
+                                    .block;
+                                    .rem(width, 260);
+                                    .rem(height, 404.04);
+                                    margin:0 auto;
+                                    .rem(font-size, 16);
+                                    .rem(padding, 30 20 20);
+
+                                    background:url("../images/m-narae.svg") no-repeat center / 100% 100%;
+
+                                    @media all and (min-width: 1200px) {
+                                        width:840px;
+                                        height:182px;
+                                        font-size:18px;
+                                        padding:20px;
+                                        .absolute;
+                                        left:0;
+                                        top:0;
+                                        background:url("../images/w-narae.svg") no-repeat center / 100% 100%;
+                                    }
+
+                                    strong {
+                                        .rem(font-size, 33);
+                                        color:#30A087;
+                                    }
+                                }
+
+
+
+
+                            }
+
+
+                        }
+
+                    }
+                }
+
+                &.gift,
+                &.stationery {
+
+                    .container {
+                        .center;
+                    
+                        h3 {
+                            .rem(font-size, 24);
+                            .rem(margin, 0 0 10);
+                            word-break:keep-all;
+
+                            @media all and (min-width: 1200px) {
+                                font-size:26px;
+                            }
+
+                            small {
+                                font-size:inherit;
+                                .block;
+                            }
+
+                            u {
+                                text-decoration:none;
+                                .block;
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                }
+                            }
+                        }
+
+                        ul.text {
+                            word-break:keep-all;
+                            padding:0;
+                            .rem(font-size, 16);
+                            .no-list;
+                            word-break:keep-all;
+                            .rem(margin, 0 0 34);
+
+                            li {
+                                .rem(margin, 0 0 6);
+                            }
+                            
+                        }
+
+                        div.box-head {
+                            background:#FBF8F3;
+                            .rem(padding, 20 10);
+                            .rem(height, 384);
+                            .relative;
+                            .rem(border-radius, 10 10 0 0);
+
+                            @media all and (min-width: 1200px) {
+                                .right;
+                                padding:60px 240px 30px 30px;
+                                height:auto;
+                            }
+
+                            &.gift {
+
+                                &::after {
+                                    content:"";
+                                    .block;
+                                    .rem(width, 174.59);
+                                    .rem(height, 81.92);
+                                    background:url("../images/img-gift.svg") no-repeat center / 100% 100%;
+                                    .absolute;
+                                    .rem(bottom, -10);
+                                    left:50%;
+                                    .rem(margin-left, -87.295);
+
+                                    @media all and (min-width: 1200px) {
+                                        width:416.46px;
+                                        height:238.01px;
+                                        left:30px;
+                                        bottom:-40px;
+                                        margin:0;
+                                    }
+        
+                                }
+    
+                            }
+
+                            &.stationery {
+
+                                &::after {
+                                    content:"";
+                                    .block;
+                                    .rem(width, 258.06);
+                                    .rem(height, 102.13);
+                                    background:url("../images/img-stationery.svg") no-repeat center / 100% 100%;
+                                    .absolute;
+                                    .rem(bottom, -10);
+                                    left:50%;
+                                    .rem(margin-left, -129.03);
+
+                                    @media all and (min-width: 1200px) {
+                                        background:url("../images/img-stationery-w.svg") no-repeat center / 100% 100%;
+                                        width:455.86px;
+                                        height:265.82px;
+                                        left:30px;
+                                        bottom:-30px;
+                                        margin:0;
+                                    }
+        
+                                }
+    
+                            }
+
+                            h4 {
+                                .rem(margin, 0 0 10);
+                                .rem(font-size, 25);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:50px;
+                                }
+
+                                small {
+                                    font-size:inherit;
+                                    color:#004D3B;
+                                }
+                            }
+
+                            p {
+                                .rem(font-size, 18);
+                                word-break:keep-all;
+
+                                span {
+                                    .block;
+                                }
+                            }
+
+                            a {
+                                .block;
+                                .rem(margin, 20 auto 0);
+                                .rem(width, 164);
+                                .rem(line-height, 46);
+                                .rem(font-size, 20);
+                                .center;
+                                background:#BCE2E3;
+                                .rem(border-radius, 6);
+                                .pointer;
+
+                                @media all and (min-width: 1200px) {
+                                    .absolute;
+                                    right:60px;
+                                    top:60px;
+                                    width:132px;
+                                    line-height:132px;
+                                    border-radius:50%;
+
+                                }
+                            }
+                        }
+
+                        ul.gift-list,
+                        ul.stationery-list {
+                            .no-list;
+                            .mapazero;
+                            .inline-block;
+                            width:100%;
+                            background:#BCE2E3;
+                            .rem(border-radius, 0 0 10 10);
+                            .rem(padding, 20 10 0);
+                            .zero;
+
+                            @media all and (min-width: 1200px) {
+                                padding:50px 50px 40px;
+                            }
+
+
+                            li {
+                                .rem(margin, 0 0 10);
+                                background:#fff;
+                                .rem(border-radius, 6);
+                                .rem(height, 184);
+                                .rem(font-size, 20);
+                                .rem(padding, 70 0 0 190);
+                                .left;
+
+                                &.lines {
+                                    .rem(padding-top, 60);
+                                }
+
+                                @media all and (min-width: 1200px) {
+                                    .inline-block;
+                                    width:calc(~"(100% - 40px) / 3");
+                                    margin:0 20px 20px 0;
+                                    padding-left:220px;
+                                    .top;
+
+                                    &:nth-child(3n) {
+                                        margin-right:0;
+                                    }
+                                }
+
+                                span {
+                                    .block;
+                                }
+                            }
+                        }
+
+
+                        ul.gift-list {
+                            li {
+                                &:nth-child(1) {
+                                    background:url("../images/gift01.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(2) {
+                                    background:url("../images/gift02.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(3) {
+                                    background:url("../images/gift03.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(4) {
+                                    background:url("../images/gift04.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(5) {
+                                    background:url("../images/gift05.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(6) {
+                                    background:url("../images/gift06.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(7) {
+                                    background:url("../images/gift07.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(8) {
+                                    background:url("../images/gift08.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(9) {
+                                    background:url("../images/gift09.png") no-repeat #fff left center / auto 100%;
+                                }
+                            }
+                        }
+
+                        ul.stationery-list {
+                            li {
+                                &:nth-child(1) {
+                                    background:url("../images/stationery01.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(2) {
+                                    background:url("../images/stationery02.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(3) {
+                                    background:url("../images/stationery03.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(4) {
+                                    background:url("../images/stationery04.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(5) {
+                                    background:url("../images/stationery05.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(6) {
+                                    background:url("../images/stationery06.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(7) {
+                                    background:url("../images/stationery07.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(8) {
+                                    background:url("../images/stationery08.png") no-repeat #fff left center / auto 100%;
+                                }
+                                &:nth-child(9) {
+                                    background:url("../images/stationery09.png") no-repeat #fff left center / auto 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+
+
+
+
                 &.board-list {
 
                     .container {
@@ -3614,8 +4824,15 @@ body {
                     a {
                         .block;
                         .rem(font-size, 16);
-                        .rem(margin, 0 0 10);
+                        .rem(margin, 0 0 4);
+                        .rem(line-height, 34);
                         color:#fff;
+                        background:#444;
+
+                        @media all and (min-width: 1200px) {
+                            line-height:inherit;
+                            background:none;
+                        }
                     }
                 }
             }

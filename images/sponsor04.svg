@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke: #595757;
+        stroke-width: 4px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke: #74c6be;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: #fdd460;
+      }
+    </style>
+  </defs>
+  <g id="그룹_1396" data-name="그룹 1396" transform="translate(-104 -1222)">
+    <ellipse id="타원_131" data-name="타원 131" class="cls-1" cx="56" cy="56" rx="56" ry="56" transform="translate(104 1222)"/>
+    <g id="그룹_1298" data-name="그룹 1298" transform="translate(144 1248)">
+      <path id="패스_4815" data-name="패스 4815" class="cls-2" d="M1.1,59.686a32.986,32.986,0,0,1,33.035,0" transform="translate(-1.1 -27.864)"/>
+      <g id="그룹_1271" data-name="그룹 1271" transform="translate(5.69 0)">
+        <line id="선_58" data-name="선 58" class="cls-3" y1="19.009" transform="translate(10.596 6.545)"/>
+        <path id="패스_4816" data-name="패스 4816" class="cls-3" d="M43.166,2.238A8.153,8.153,0,0,0,35.2,4.4a8.3,8.3,0,0,0-2.158,7.963A8.153,8.153,0,0,0,41.008,10.2,8.24,8.24,0,0,0,43.166,2.238Z" transform="translate(-22.191 -1.961)"/>
+        <path id="패스_4817" data-name="패스 4817" class="cls-3" d="M12.445,6.238A8.153,8.153,0,0,1,20.408,8.4a8.3,8.3,0,0,1,2.158,7.963A8.153,8.153,0,0,1,14.6,14.2,8.3,8.3,0,0,1,12.445,6.238Z" transform="translate(-12.175 -3.906)"/>
+        <path id="패스_4818" data-name="패스 4818" class="cls-4" d="M28.55,37.3a4.769,4.769,0,0,0-4.11,2.312,4.822,4.822,0,0,0-8.94,2.517c0,6.011,8.94,10.532,8.94,10.532s8.94-4.47,8.94-10.532A4.857,4.857,0,0,0,28.55,37.3Z" transform="translate(-13.792 -19.144)"/>
+        <line id="선_59" data-name="선 59" class="cls-3" y1="10.121" x2="10.121" transform="translate(10.853 0.277)"/>
+        <line id="선_60" data-name="선 60" class="cls-3" x1="10.121" y1="10.121" transform="translate(0.27 2.332)"/>
+      </g>
+    </g>
+  </g>
+</svg>
