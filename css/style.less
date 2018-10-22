@@ -3622,6 +3622,577 @@ body {
 
                     }
                 }
+                
+                &.work {
+                    .container {
+                        ul.tabs {
+                            .inline-block;
+                            width:100%;
+                            .rem(margin, 10 0 20);
+                            padding:0;
+                            .zero;
+                            .center;
+
+                            li {
+                                .inline-block;
+                                background:#E6E6E6;
+                                width:50%;
+                                .rem(margin-bottom, 10);
+
+                                @media all and (min-width: 1200px) {
+                                    width:160px;
+                                }
+
+                                &:nth-child(odd) {
+                                    .rem(border-radius, 25 0 0 25);
+                                }
+
+                                &:nth-child(even) {
+                                    .rem(border-radius, 0 25 25 0);
+                                }
+
+                                &:last-child {
+                                    .rem(border-radius,25);
+                                }
+
+                                @media all and (min-width: 1200px) {
+                                    &:nth-child(odd) {
+                                        border-radius:0;
+                                    }
+
+                                    &:nth-child(even) {
+                                        border-radius:0;
+                                    }
+
+                                    &:first-child {
+                                        .rem(border-radius, 25 0 0 25);
+                                    }
+
+                                    &:last-child {
+                                        .rem(border-radius, 0 25 25 0);
+                                    }
+                                }
+
+                                a {
+                                    .block;
+                                    .rem(line-height, 50);
+                                    .rem(border-radius, 25);
+                                    .rem(font-size, 20);
+                                    .center;
+
+                                    &.active {
+                                        background:#595757;
+                                        color:#fff;
+                                    }
+                                }
+                            }
+
+                        }
+
+                        ul.sidebar {
+                            .none;
+
+                            @media all and (min-width: 1200px) {
+                                .block;
+                                .fixed;
+                                left:50%;
+                                margin:0 0 0 620px;
+                                top:480px;
+                                .no-list;
+                                padding:0;
+
+                                li {
+                                    a {
+                                        .block;
+                                        font-size:14px;
+                                        width:90px;
+                                        height:120px;
+                                        margin:0 0 10px 0;
+                                        .center;
+                                        border:1px solid #ccc;
+                                        border-radius:10px;
+                                        padding-top:66px;
+                                        line-height:1.4;
+
+                                        &.printing {
+                                            background:url("../images/sidebar-printing.svg") no-repeat center / 100% auto;
+                                        }
+
+                                        &.gift {
+                                            background:url("../images/sidebar-gift.svg") no-repeat center / 100% auto;
+                                        }
+
+                                        strong {
+                                            .block;
+                                            margin:0 auto;
+                                            font-size:16px;
+                                        }
+                                        
+                                    }
+                                }
+                            }
+                        }
+
+                        div.tab01 {
+
+                            h3 {
+                                .rem(font-size, 22);
+                                .center;
+
+                                @media all and (min-width: 1200px) {
+                                    border-bottom:1px solid #eee;
+                                    .rem(padding, 0 0 30px)
+                                }
+    
+                                small {
+                                    .block;
+                                    margin:0 auto;
+                                    font-size:inherit;
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                    }
+        
+                                }
+                            }
+
+                            dl {
+                                .mapazero;
+    
+                                dt {
+                                    .flex;
+                                    .relative;
+                                    .rem(width, 114);
+                                    .rem(height, 114);
+                                    .rem(margin, 0 auto 50);
+                                    .rem(font-size, 22);
+                                    border-radius:50%;
+                                    .rem(border-width, 8);
+                                    border-style:solid;
+
+                                    @media all and (min-width: 1200px) {
+                                        float:left;
+                                        margin:0;
+                                    }
+        
+    
+                                    &::before {
+                                        content:"";
+                                        .block;
+                                        width:1px;
+                                        .rem(height, 50);
+                                        .absolute;
+                                        left:50%;
+                                        .rem(bottom, -50);
+
+                                        @media all and (min-width: 1200px) {
+                                            .rem(width, 150);
+                                            height:1px;
+                                            left:auto;
+                                            right:-150px;
+                                            top:50%;
+                                        }
+                                    }
+    
+                                    &::after {
+                                        content:"";
+                                        .block;
+                                        .rem(width, 12);
+                                        .rem(height, 12);
+                                        .absolute;
+                                        left:50%;
+                                        .rem(bottom, -62 );
+                                        .rem(margin-left, -6);
+                                        border-radius:50%;
+
+                                        @media all and (min-width: 1200px) {
+                                            left:auto;
+                                            right:-162px;
+                                            top:50%;
+                                            margin:-6px 0 0;
+                                        }
+                                    }
+    
+                                    &.mission {
+                                        border-color:#FFD981;
+    
+                                        &::before,
+                                        &::after {
+                                            background-color:#FFD981;
+                                        }
+                                    }
+    
+                                    &.vision {
+                                        border-color:#BCE2E3;
+    
+                                        &::before,
+                                        &::after {
+                                            background-color:#BCE2E3;
+                                        }
+                                    }
+    
+                                    &.value {
+                                        border-color:#BCDCBC;
+    
+                                        &::before,
+                                        &::after {
+                                            background-color:#BCDCBC;
+                                        }
+                                    }
+    
+                                    &.goal {
+                                        border-color:#ACC6D2;
+    
+                                        &::before,
+                                        &::after {
+                                            background-color:#ACC6D2;
+                                        }
+                                    }
+    
+                                    &.rule {
+                                        border-color:#F2BE8C;
+                                        .rem(margin-bottom, 70);
+    
+                                        &::before,
+                                        &::after {
+                                            background-color:#F2BE8C;
+                                        }
+                                    }
+                                }
+    
+                                dd {
+                                    padding:0;
+                                    .rem(margin, 14 0 30);
+                                    .rem(font-size, 20);
+                                    .center;
+
+                                    @media all and (max-width: 1199px) {
+                                        .inline-block;
+                                        width:100%;
+                                    }
+
+                                    @media all and (min-width: 1200px) {
+                                        .left;
+                                        min-height:114px;
+                                        width:auto;
+                                        padding:42px 0 0;
+                                        margin:0 0 40px 320px;
+                                    }
+    
+                                    p {
+                                        .mapazero;
+
+                                        @media all and (min-width: 1200px) {
+                                            .inline-block;
+                                        }
+                                    }
+    
+                                    &.value {
+                                        .zero;
+
+
+                                        div {
+                                            .rem(margin, 0 0 20);
+                                            .rem(font-size, 20);
+                                            .top;
+                                            @media all and (min-width: 1200px) {
+                                                .inline-block;
+                                                .center;
+                                                width:calc(~"100% / 3");
+                                                .relative;
+                                                top:-60px;
+                                            
+                                                
+                                            }
+
+                                            h5 {
+                                                .flex;
+                                                .rem(margin, 0 auto 10);
+                                                .rem(width, 173);
+                                                .rem(height, 173);
+                                                .rem(border-width, 5);
+                                                border-style:solid;
+                                                border-radius:50%;
+                                                .rem(padding, 70 0 0);
+                                                .rem(font-size, 24);
+                                            }
+
+                                            p {
+                                        
+                                                @media all and (min-width: 1200px) {
+                                                    .block;
+                                                    .center;
+                                                }
+                                            }
+        
+                                            &.v01 {
+                                                h5 {
+                                                    border-color:rgba(183,220,118,0.5);
+                                                    background:url("../images/value-v01.svg") no-repeat center / 100% auto;
+                                                }
+                                            }
+        
+                                            &.v02 {
+                                                h5 {
+                                                    border-color:rgba(123,190,216,0.5);
+                                                    background:url("../images/value-v02.svg") no-repeat center / 100% auto;
+                                                }
+                                            }
+        
+                                            &.v03 {
+                                                h5 {
+                                                    border-color:rgba(216,219,140,0.5);
+                                                    background:url("../images/value-v03.svg") no-repeat center / 100% auto;
+                                                }
+                                            }
+                                        }
+                                    }
+    
+                                    &.goal {
+                                        h5 {
+                                            .rem(margin, 0 auto 20);
+                                            .rem(width, 280);
+                                            .rem(height, 210);
+                                            .rem(padding, 180 0 0);
+                                            .rem(font-size, 20);
+                                            .normal;
+
+                                            @media all and (min-width: 1200px) {
+                                                .inline-block;
+                                                .center;
+                                                .relative;
+                                                top:-60px;
+                                            }
+    
+                                            &:nth-of-type(1) {
+                                                background:url("../images/goal01.svg") no-repeat center / 100% auto;
+                                            }
+    
+                                            &:nth-of-type(2) {
+                                                background:url("../images/goal02.svg") no-repeat center / 100% auto;
+                                            }
+    
+                                            &:nth-of-type(3) {
+                                                background:url("../images/goal03.svg") no-repeat center / 100% auto;
+                                            }
+                                        }
+                                    }
+    
+                                    &.rule {
+
+
+                                        @media all and (min-width: 1200px) {
+                                            display:static;
+                                        }
+
+                                        div {
+                                            .flex;
+                                            flex-direction: column;
+                                            .rem(margin, 0 0 10);
+                                            .rem(min-height, 150);
+                                            .rem(border-radius, 12);
+
+
+                                            @media all and (min-width: 1200px) {
+                                                float:left;
+                                                width:calc(~"(100% - 20px) / 3");
+                                                margin-right:10px;
+                                                .relative;
+                                                top:-60px;
+
+                                                &:last-of-type {
+                                                    margin-right:0;
+                                                }
+                                            }
+    
+
+                                            &:nth-of-type(odd) {
+                                                background:rgba(246,215,159,0.5);
+                                            }
+        
+                                            &:nth-of-type(even) {
+                                                background:rgba(247,182,171,0.5);
+                                            }
+                                            p {
+                                                margin:0;
+                                                .block;
+                                            }
+                                        }
+
+                                    }
+                                }
+                            }
+    
+                            div.slogan {
+                                .relative;
+                                background:#f4f4f4;
+                                .center;
+                                .rem(border-radius, 12);
+                                .rem(padding, 20 10 10);
+                                .rem(font-size, 26);
+                                .rem(margin, 90 0 0);
+
+                                &::before {
+                                    content:"";
+                                    .block;
+                                    .rem(top, 50);
+                                    .absolute;
+                                    .rem(left, 50);
+                                    .rem(width, 24.67);
+                                    .rem(height, 17.48);
+                                    background:url("../images/slogan01.svg") no-repeat center / 100% 100%;
+    
+                                    @media all and (min-width: 1200px) {
+                                        left:260px;
+                                    }
+                                }
+
+                                &::after {
+                                    content:"";
+                                    .block;
+                                    .rem(top, 50);
+                                    .absolute;
+                                    .rem(right, 50);
+                                    .rem(width, 24.67);
+                                    .rem(height, 17.48);
+                                    background:url("../images/slogan02.svg") no-repeat center / 100% 100%;
+    
+                                    @media all and (min-width: 1200px) {
+                                        right:260px;
+                                    }
+                                }
+    
+                                span {
+                                    .block;
+    
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                    }
+                                }
+    
+                                strong {
+                                    .rem(font-size, 30);
+                                }
+                                
+                                h3 {
+                                    .absolute;
+                                    .rem(font-size, 24);
+                                    .rem(width, 174);
+                                    .rem(line-height, 60);
+                                    .rem(top, -30);
+                                    left:50%;
+                                    .rem(margin, 0 0 0 -87);
+                                    background:url("../images/slogan.svg") no-repeat center / 100% 100%;
+                                    .rem(border-radius, 12);
+                                    .rem(padding, 0 0 0 40);
+                                    
+                                }
+                            }
+                        }
+
+                        div.tab02 {
+
+                            h3 {
+                                .center;
+                                .rem(font-size, 20);
+                                .relative;
+
+                                @media all and (min-width: 1200px) {
+                                    .left;
+                                }
+    
+
+                                &::before {
+                                    content:"";
+                                    .rem(height, 3);
+                                    .rem(width, 18);
+                                    .rem(margin, 10 auto);
+                                    .block;
+                                    background:#64BFAA;
+
+                                    @media all and (min-width: 1200px) {
+                                        margin:10px 0;
+                                    }
+        
+                                }
+                            }
+
+                            p.info {
+                                .center;
+                                .rem(font-size, 18);
+
+                                @media all and (min-width: 1200px) {
+                                    font-size:16px;
+                                    .left;
+                                }
+                            }
+
+                            dl{
+                                border-top:1px solid #6A6A6A;
+
+                                @media all and (min-width: 1200px) {
+                                    .zero;
+                                }
+
+                                dt{
+                                    float:left;
+                                    .rem(width, 120);
+                                    .rem(line-height, 50);
+                                    .rem(padding, 0 10);
+                                    .rem(font-size, 16);
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        float:none;
+                                        width:160px;
+                                        border-bottom:1px solid #6A6A6A;
+                                        background:#F7EFF9;
+                                        padding:0 20px;
+                                    }
+                                }
+
+                                dd {
+                                    .relative;
+                                    .rem(padding, 12 10);
+                                    .rem(min-height, 50);
+                                    .rem(margin-left, 120);
+                                    border-bottom:1px solid #6A6A6A;
+                                    word-break:keep-all;
+                                    .rem(font-size, 16);
+
+                                    @media all and (min-width: 1200px) {
+                                        .inline-block;
+                                        margin-left:0;
+                                        width:calc(~"50% - 160px");
+                                        padding:0 20px;
+
+                                        &:last-child {
+                                            width:calc(~"100% - 160px");
+                                        }
+                                    }
+
+                                    &:before {
+                                        content:"";
+                                        .absolute;
+                                        z-index:-1;
+                                        .rem(left, -120);
+                                        top:0;
+                                        bottom:-1px;
+                                        .rem(width, 120);
+                                        background:#F7EFF9;
+                                        border-bottom:1px solid #6A6A6A;
+                                        border-right:1px solid #6A6A6A;
+
+                                        @media all and (min-width: 1200px) {
+                                            .none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+                }
 
                 &.gift,
                 &.stationery {
@@ -3798,8 +4369,8 @@ body {
                                 background:#fff;
                                 .rem(border-radius, 6);
                                 .rem(height, 184);
-                                .rem(font-size, 20);
-                                .rem(padding, 70 0 0 190);
+                                .rem(font-size, 18);
+                                .rem(padding, 70 0 0 180);
                                 .left;
 
                                 &.lines {
