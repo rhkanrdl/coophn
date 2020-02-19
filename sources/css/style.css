@@ -6747,7 +6747,7 @@ body div#content.sub section.sub-content.gallery-list .container ul.list {
     width: calc((100% - 80px) / 5);
     margin-right: 20px;
   }
-  body div#content.sub section.sub-content.gallery-list .container ul.list li:nth-child(4n) {
+  body div#content.sub section.sub-content.gallery-list .container ul.list li:nth-child(5n) {
     margin-right: 0;
   }
 }
