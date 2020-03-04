@@ -766,14 +766,14 @@ body {
     
                                 li {
                                     .inline-block;
-                                    margin: 0 22px 0 0;
+                                    margin: 0 18px 0 0;
                                     height: 0;
                                     .hidden;
                                     .ani(0.6s);
     
                                     a {
                                         .inline-block;
-                                        font-size: 18px;
+                                        font-size: 17px;
                                         margin: 46px 0 0;
                                         padding: 10px 0;
     
@@ -836,6 +836,7 @@ body {
                                         margin-left: 410px;
                                         top: -10px;
                                         .ani(0.6s);
+                                        z-index:-1;
                                     }
     
                                     li {
@@ -866,11 +867,12 @@ body {
                                         margin-left: 400px;
                                         top: -20px;
                                         .ani(0.6s);
+                                        z-index:-1;
                                     }
     
                                     li {
                                         &:first-child {
-                                            margin-left: -160px;
+                                            margin-left: -324px;
                                         }
                                     }
                                 }
@@ -895,6 +897,7 @@ body {
                                         margin-left: 390px;
                                         top: -20px;
                                         .ani(0.6s);
+                                        z-index:-1;
                                     }
     
                                     li {
@@ -925,6 +928,7 @@ body {
                                         margin-left: 440px;
                                         top: -20px;
                                         .ani(0.6s);
+                                        z-index:-1;
                                     }
     
                                     li {
@@ -1105,7 +1109,7 @@ body {
                                 a {
                                     .inline-block;
                                     font-size: 16px;
-                                    padding: 0 10px 10px 0;
+                                    padding: 0 16px 10px 0;
                                     color:#fff;
                                     .ani();
 
@@ -1289,9 +1293,13 @@ body {
                         .hidden;
 
                         @media all and (min-width: 1200px) {
-                            width: 25%;
-                            font-size: 24px;
+                            width:calc(~"100% / 6");
+                            font-size: 23px;
                             height:auto;
+                        }
+
+                        span {
+                            display:block;
                         }
 
                         &::before {
@@ -1302,7 +1310,7 @@ body {
                             .rem(height, 140);
 
                             @media all and (min-width: 1200px) {
-                                width: 272px;
+                                width: 198px;
                                 height: 238px;
                                 margin: 130px 0 30px;
                                 .ani();
@@ -1340,6 +1348,18 @@ body {
                         &:nth-of-type(4) {
                             &::before {
                                 background: url("../images/main-links04.svg") no-repeat center / 100% auto;
+                            }
+                        }
+
+                        &:nth-of-type(5) {
+                            &::before {
+                                background: url("../images/main-links05.svg") no-repeat center / 100% auto;
+                            }
+                        }
+
+                        &:nth-of-type(6) {
+                            &::before {
+                                background: url("../images/main-links06.svg") no-repeat center / 100% auto;
                             }
                         }
                     }
@@ -1921,23 +1941,10 @@ body {
                                         .hidden;
 
                                         img {
-                                            .none;
                                             min-width:100%;
                                             max-width:100%;
                                             height:auto;
 
-                                            @media all and (max-width: 1199px) {
-                                                &:first-of-type {
-                                                    .block;
-                                                }
-                                            }
-
-                                            @media all and (min-width: 1200px) {
-                                                .inline-block;
-                                                min-width:auto;
-                                                width:50%;
-                                                height:115px;
-                                            }
                                         }
 
                                         h4 {
@@ -2062,6 +2069,10 @@ body {
         }
         /* SUB */
         &.sub {
+
+            img {
+                max-width:1160px;
+            }
 
 
             ul.sidebar {
