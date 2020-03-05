@@ -1371,15 +1371,16 @@ body {
                 background: #fff;
 
                 .container {
-                    .rem(padding, 40 10 10);
+                    .rem(padding, 30 10 10);
                     .zero;
 
                     @media all and (min-width: 1200px) {
-                        padding:90px 0 60px;
+                        padding:80px 0 60px;
                     }
 
                     div.notice {
                         .rem(margin, 0 0 30);
+                        .rem(padding, 50 0 0);
                         .relative;
 
                         @media all and (min-width: 1200px) {
@@ -1387,53 +1388,63 @@ body {
                             .top;
                             width:calc(~"50% - 20px");
                             margin-right:40px;
+                            padding:70px 0 0;
                         }
 
-                        div.tabs {
-                            .zero;
-                            white-space: nowrap;
-                            border-bottom: 2px solid #64C0AB;
-                            padding: 0 0 20px;
 
-                            input {
-                                .none;
-                            }
-                            label {
+                        div.tab-content {
+
+                            &::before {
+                                content:"";
+                                .block;
+                                .absolute;
+                                left:0;
+                                right:0;
+                                .rem(top, 36);
+                                background:#ddd;
+                                height:2px;
+
+
+                                @media all and (min-width: 1200px) {
+                                    top:55px;
+                                }
+                            }top:0;
+                            width:100%;
+
+                            a.tablink {
+                                .inline-block;
+                                .absolute;
+                                left:0;
+                                .rem(top, 4.5); 
                                 .rem(font-size, 16);
                                 .rem(margin, 0 10 0 0);
+                                padding: 0 0 20px;
 
 
                                 @media all and (min-width: 1200px) {
                                     font-size:22px;
                                     margin:0 20px 0 0;
+                                    top:10px;
                                 }
 
-                                &:last-of-type {
-                                    margin: 0;
+                                &.active {
+                                    .rem(font-size, 20);
+                                    .bold;
+                                    z-index:200;
+                                    border-bottom: 2px solid #64C0AB;
+                                    top:0;
+    
+    
+                                    @media all and (min-width: 1200px) {
+                                        font-size:30px;
+                                    }
                                 }
-                            }
-
-                            input:checked + label {
-                                .rem(font-size, 20);
-                                .bold;
-
-
-                                @media all and (min-width: 1200px) {
-                                    font-size:30px;
-                                }
-                            }
-                        }
-
-                        div.data {
-                            .none;
-
-                            &.show {
-                                .block;
                             }
 
                             ul.list {
                                 .no-list;
                                 .mapazero;
+                                .none;
 
                                 li {
                                     .rem(line-height, 40);
@@ -1529,7 +1540,7 @@ body {
                                 }
                             }
 
-                            & > a {
+                            a.more {
                                 .zero;
                                 .absolute;
                                 right:0;
@@ -1540,7 +1551,32 @@ body {
                                     .rem(font-size, 20);
                                 }
                             }
+
+
+
+
+                            &#tab02,
+                            &#tab04 {
+                                a.tablink {
+                                    .rem(left, 80);
+    
+                                    @media all and (min-width: 1200px) {
+                                        left:120px;
+                                    }
+                                }
+                            }
+
+                            &.active ul.list {
+                                .block;
+
+                            } 
+
+
                         }
+
+
+
+
 
                     }
 
@@ -5374,7 +5410,7 @@ body {
                                             .top;
                                             .rem(margin, 0 auto 20);
                                             .rem(width, 216);
-                                            .rem(padding, 180 0 0);
+                                            .rem(padding, 230 0 0);
                                             .rem(font-size, 18);
                                             .normal;
 
@@ -5382,7 +5418,7 @@ body {
                                                 .inline-block;
                                                 .center;
                                                 .relative;
-                                                top:-60px;
+                                                top:-90px;
                                                 margin:0 auto -40px;
                                             }
     
@@ -8177,6 +8213,11 @@ body {
                                 &.mov {
                                     .center;
                                     .rem(margin, 20 0);
+                                }
+
+                                &.sr-info {
+                                    text-align:center;
+                                    color:#004D3B;
                                 }
                             }
 

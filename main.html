@@ -18,7 +18,7 @@
 
 
          //'EAAFPi3wM88oBAOCqn1auc5MYO981pmajfDv0jtCasSO29P5U0c9JJaoHDC1KKxZBimBgk4XSrUd2sV1ZAHJzCKLprZCxBllzT3eth501L5IWaZAke2KpA3k4JGI6KFi8mMKjnOxe0QicPJz4M9TIxZA6aEEVECeYZD';
-        var token ='EAAFPi3wM88oBACZB2XwGFiLmMiGQ9QjjxmgZABYR0VqDcbmKBZBlLleit5ZCD4gVrGhk5PhZAg0dZBNawh00NZBI4xYyP7qye2O15OnyXAKq488ycTrLDn59f3fsOjKr4uZBiOokQSQHXO27AeCVnNNoZCplFxagaZANHlEZCrKfprjdgZDZD';
+        var token ='EAAFPi3wM88oBABwBTplM8IMaVxDsU5axAuCMnTmPZAOQQkHZCMosmHH38poEJWypZCRitrxMhqnIyeVMzeMJvvjZABINp6wmtSU0rB8c1sZBqZAWloTeLdoBw19jjVSqTb57ZCCBx7SxIrZBL1I0FTeF6DLAIE9ZA9bxDnx3Ci40ygQZDZD';
 
 
 
@@ -135,7 +135,7 @@
                         <a href="">
                             <img
                                     src="${image.realViewUrl}"
-                                    alt="가능성의 날개를 달다. 오늘보다는 내일이 내일보다는 미래가 행복해지는 희망의 날개짓">
+                                    alt="따뜻한 겨울, 가능성에 날개를 달다">
                         </a>
                     </div>
                 </c:forEach>
@@ -155,70 +155,104 @@
         <div class="container">
             <h2 class="sr-only">바로가기 링크</h2>
 
-            <a href="/front/menu/MENU000000000000034/" title="사회적협동조합">사회적협동조합</a>
-            <a href="/front/menu/MENU000000000000055/" title="희망나래일터">희망나래일터</a>
-            <a href="/front/menu/MENU000000000000060/" title="희망나래활동센터">희망나래활동센터</a>
-            <a href="/front/menu/MENU000000000000065/" title="희망나래공동체">희망나래공동체</a>
+            <a href="/front/menu/MENU000000000000034/" title="사회적협동조합">사회적<span>협동조합</span></a>
+            <a href="/front/menu/MENU000000000000055/" title="희망나래일터">희망나래<span>일터</span></a>
+            <a href="/front/menu/MENU000000000000060/" title="희망나래활동센터">희망나래<span>활동센터</span></a>
+
+            <a href="/front/menu/MENU000000000000065/" title="희망나래공동체">희망나래<span>공동체</span></a>
+            <a href="http://www.dongbaek.kr/" target="_blank" title="새창으로 열립니다">제주시동백<span>주간활동센터</span></a>
+
+            <a href="http://www.jejucc.or.kr/" target="_blank" title="새창으로 열립니다">제주시장애인<span>통합돌봄지원센터</span></a>
         </div>
     </section>
     <section class="main-contents">
         <div class="container">
-            <div class="notice">
-                <div class="tabs">
-                    <input name="noticetab" id="notice01" type="radio" checked>
-                    <label for="notice01">공지사항</label>
-                    <input name="noticetab" id="notice02" type="radio">
-                    <label for="notice02">채용정보</label>
-                </div>
-
-                <div class="data notice01 show">
-                    <h2 class="sr-only">공지사항 최근게시물</h2>
-                    <ul class="list">
-
-                        <wp:boardLatest boardId="notice" skinName="notice" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000047"  moreLink="/front/board/theme/view.wp"/>
-
-                    </ul>
-                    <a href="/front/board/theme/list.wp?boardId=notice&menuId=MENU000000000000047"><i class='bx bx-plus'></i>공지사항 게시판 바로가기</a>
-                </div>
-
-                <div class="data notice02">
-                    <h2 class="sr-only">채용정보 최근게시물</h2>
-                    <ul class="list">
-
-                        <wp:boardLatest boardId="job" skinName="notice" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000074" listCount="5" moreLink="/front/board/theme/view.wp"/>
-                    </ul>
-                    <a href="/front/board/theme/list.wp?boardId=job&menuId=MENU000000000000074"><i class='bx bx-plus'></i>채용정보 게시판 바로가기</a>
-                </div>
-
-            </div>
 
 
-            <div class="notice press">
-                <div class="tabs">
-                    <input name="presstab" id="notice03" type="radio" checked>
-                    <label for="notice03">언론보도</label>
-                    <input name="presstab" id="notice04" type="radio">
-                    <label for="notice04">소식지</label>
-                </div>
+<div class="notice">
 
-                <div class="data notice03 show">
-                    <h2 class="sr-only">언론보도 최근게시물</h2>
-                    <ul class="list">
+    <div id="tab01" class="tab-content active">
+        <a
+            href="/front/board/theme/list.wp?boardId=notice&menuId=MENU000000000000047"
+            class="tablink active"
+            data="tab01">공지사항
+        </a>
+        <ul class="list">
+            <wp:boardLatest
+                boardId="notice"
+                skinName="notice"
+                linkUrl="/front/board/theme/list.wp"
+                menuId="MENU000000000000047"
+                moreLink="/front/board/theme/view.wp"/>
+        </ul>
+        <a
+            href="/front/board/theme/list.wp?boardId=notice&menuId=MENU000000000000047"
+            class="more">
+            <i class="bx bx-plus"></i>
+        </a>
+    </div>
+    <div id="tab02" class="tab-content">
+        <a
+            href="/front/board/theme/list.wp?boardId=job&menuId=MENU000000000000074"
+            class="tablink"
+            data="tab02">채용정보
+        </a>
+        <ul class="list">
+            <wp:boardLatest
+                boardId="job"
+                skinName="notice"
+                linkUrl="/front/board/theme/list.wp"
+                menuId="MENU000000000000074"
+                listCount="5"
+                moreLink="/front/board/theme/view.wp"/>
+        </ul>
+        <a
+            href="/front/board/theme/list.wp?boardId=job&menuId=MENU000000000000074"
+            class="more">
+            <i class="bx bx-plus"></i>
+        </a>
+    </div>
+</div>
 
-                        <wp:boardLatest boardId="media" skinName="notice" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000042"  moreLink="/front/board/theme/view.wp"/>
 
-                    </ul>
-                    <a href="/front/board/theme/list.wp?boardId=media&menuId=MENU000000000000042"><i class='bx bx-plus'></i>언론보도 게시판 바로가기</a>
-                </div>
 
-                <div class="data notice04">
-                    <h2 class="sr-only">소식지 최근게시물</h2>
-                    <ul class="list">
 
-                        <wp:boardLatest boardId="letter" skinName="notice" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000050" listCount="5" moreLink="/front/board/theme/view.wp"/>
-                    </ul>
-                    <a href="/front/board/theme/list.wp?boardId=letter&menuId=MENU000000000000050"><i class='bx bx-plus'></i>소식지&뉴스레터 게시판 바로가기</a>
-                </div>
+<div class="notice press">
+
+    <div id="tab03" class="tab-content active">
+        <a
+            href="/front/board/theme/list.wp?boardId=media&menuId=MENU000000000000042"
+            class="tablink active"
+            data="tab03">언론보도
+        </a>
+        <ul class="list">
+
+            <wp:boardLatest boardId="media" skinName="notice" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000042"  moreLink="/front/board/theme/view.wp"/>
+        </ul>
+        <a
+            href="/front/board/theme/list.wp?boardId=media&menuId=MENU000000000000042"
+            class="more">
+            <i class="bx bx-plus"></i>
+        </a>
+    </div>
+    <div id="tab04" class="tab-content">
+        <a
+            href="/front/board/theme/list.wp?boardId=letter&menuId=MENU000000000000050"
+            class="tablink"
+            data="tab04">소식지
+        </a>
+        <ul class="list">
+
+            <wp:boardLatest boardId="letter" skinName="notice" linkUrl="/front/board/theme/list.wp" menuId ="MENU000000000000050" listCount="5" moreLink="/front/board/theme/view.wp"/>
+        </ul>
+        <a
+            href="/front/board/theme/list.wp?boardId=letter&menuId=MENU000000000000050"
+            class="more">
+            <i class="bx bx-plus"></i>
+        </a>
+    </div>
+</div>
+
 
 
         </div>
@@ -282,10 +316,7 @@
 
                         <li>
                             <a href="/front/board/theme/list.wp?boardId=printing&menuId=MENU000000000000043">
-                                <img src="/sources/images/main-printing01.png" alt="">
-                                <img src="/sources/images/main-printing02.png" alt="">
-                                <img src="/sources/images/main-printing03.png" alt="">
-                                <img src="/sources/images/main-printing04.png" alt="">
+                                <img src="/wp/assets/source/images/product01.jpg" alt="인쇄물 샘플 이미지">
                             </a>
                         </li>
 
@@ -320,10 +351,7 @@
                     <ul>
                         <li>
                             <a href="/front/menu/MENU000000000000044/">
-                                <img src="/sources/images/main-gift01.png" alt="">
-                                <img src="/sources/images/main-gift02.png" alt="">
-                                <img src="/sources/images/main-gift03.png" alt="">
-                                <img src="/sources/images/main-gift04.png" alt="">
+                                <img src="/wp/assets/source/images/product02.jpg" alt="GIFT 샘플 이미지">
                             </a>
                         </li>
                     </ul>
@@ -345,10 +373,7 @@
                     <ul>
                         <li>
                             <a href="/front/menu/MENU000000000000045/">
-                                <img src="/sources/images/main-stationery01.png" alt="">
-                                <img src="/sources/images/main-stationery02.png" alt="">
-                                <img src="/sources/images/main-stationery03.png" alt="">
-                                <img src="/sources/images/main-stationery04.png" alt="">
+                                <img src="/wp/assets/source/images/product03.jpg" alt="문구류 샘플 이미지">
                             </a>
                         </li>
                     </ul>
@@ -371,10 +396,7 @@
                     <ul>
                         <li>
                             <a href="/front/menu/MENU000000000000072/">
-                                <img src="/sources/images/main-dm01.png" alt="">
-                                <img src="/sources/images/main-dm02.png" alt="">
-                                <img src="/sources/images/main-dm03.png" alt="">
-                                <img src="/sources/images/main-dm04.png" alt="">
+                                <img src="/wp/assets/source/images/product04.jpg" alt="DM 이미지">
                             </a>
                         </li>
                     </ul>

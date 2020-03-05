@@ -1205,16 +1205,17 @@ body div#content.main section.main-contents {
   background: #fff;
 }
 body div#content.main section.main-contents .container {
-  padding: 2.85714286rem 0.71428571rem 0.71428571rem;
+  padding: 2.14285714rem 0.71428571rem 0.71428571rem;
   font-size: 0;
 }
 @media all and (min-width: 1200px) {
   body div#content.main section.main-contents .container {
-    padding: 90px 0 60px;
+    padding: 80px 0 60px;
   }
 }
 body div#content.main section.main-contents .container div.notice {
   margin: 0 0 2.14285714rem;
+  padding: 3.57142857rem 0 0;
   position: relative;
 }
 @media all and (min-width: 1200px) {
@@ -1223,61 +1224,73 @@ body div#content.main section.main-contents .container div.notice {
     vertical-align: top;
     width: calc(50% - 20px);
     margin-right: 40px;
+    padding: 70px 0 0;
   }
 }
-body div#content.main section.main-contents .container div.notice div.tabs {
-  font-size: 0;
-  white-space: nowrap;
-  border-bottom: 2px solid #64C0AB;
-  padding: 0 0 20px;
+body div#content.main section.main-contents .container div.notice div.tab-content {
+  top: 0;
+  width: 100%;
 }
-body div#content.main section.main-contents .container div.notice div.tabs input {
-  display: none;
+body div#content.main section.main-contents .container div.notice div.tab-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2.57142857rem;
+  background: #ddd;
+  height: 2px;
 }
-body div#content.main section.main-contents .container div.notice div.tabs label {
+@media all and (min-width: 1200px) {
+  body div#content.main section.main-contents .container div.notice div.tab-content::before {
+    top: 55px;
+  }
+}
+body div#content.main section.main-contents .container div.notice div.tab-content a.tablink {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0.32142857rem;
   font-size: 1.14285714rem;
   margin: 0 0.71428571rem 0 0;
+  padding: 0 0 20px;
 }
 @media all and (min-width: 1200px) {
-  body div#content.main section.main-contents .container div.notice div.tabs label {
+  body div#content.main section.main-contents .container div.notice div.tab-content a.tablink {
     font-size: 22px;
     margin: 0 20px 0 0;
+    top: 10px;
   }
 }
-body div#content.main section.main-contents .container div.notice div.tabs label:last-of-type {
-  margin: 0;
-}
-body div#content.main section.main-contents .container div.notice div.tabs input:checked + label {
+body div#content.main section.main-contents .container div.notice div.tab-content a.tablink.active {
   font-size: 1.42857143rem;
   font-weight: 600;
+  z-index: 200;
+  border-bottom: 2px solid #64C0AB;
+  top: 0;
 }
 @media all and (min-width: 1200px) {
-  body div#content.main section.main-contents .container div.notice div.tabs input:checked + label {
+  body div#content.main section.main-contents .container div.notice div.tab-content a.tablink.active {
     font-size: 30px;
   }
 }
-body div#content.main section.main-contents .container div.notice div.data {
-  display: none;
-}
-body div#content.main section.main-contents .container div.notice div.data.show {
-  display: block;
-}
-body div#content.main section.main-contents .container div.notice div.data ul.list {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: none;
 }
-body div#content.main section.main-contents .container div.notice div.data ul.list li {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.list li {
   line-height: 2.85714286rem;
   border-bottom: 1px solid #ccc;
   font-size: 0;
 }
 @media all and (min-width: 1200px) {
-  body div#content.main section.main-contents .container div.notice div.data ul.list li {
+  body div#content.main section.main-contents .container div.notice div.tab-content ul.list li {
     line-height: 60px;
   }
 }
-body div#content.main section.main-contents .container div.notice div.data ul.list li a {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.list li a {
   display: inline-block;
   vertical-align: top;
   font-size: 1rem;
@@ -1287,13 +1300,13 @@ body div#content.main section.main-contents .container div.notice div.data ul.li
   white-space: nowrap;
 }
 @media all and (min-width: 1200px) {
-  body div#content.main section.main-contents .container div.notice div.data ul.list li a {
+  body div#content.main section.main-contents .container div.notice div.tab-content ul.list li a {
     font-size: 16px;
     width: calc(100% - 110px);
     font-weight: 600;
   }
 }
-body div#content.main section.main-contents .container div.notice div.data ul.list li i {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.list li i {
   display: inline-block;
   vertical-align: top;
   text-align: right;
@@ -1302,21 +1315,21 @@ body div#content.main section.main-contents .container div.notice div.data ul.li
   font-style: normal;
 }
 @media all and (min-width: 1200px) {
-  body div#content.main section.main-contents .container div.notice div.data ul.list li i {
+  body div#content.main section.main-contents .container div.notice div.tab-content ul.list li i {
     width: 110px;
     font-size: 16px;
   }
 }
-body div#content.main section.main-contents .container div.notice div.data ul.gall-list {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.gall-list {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 0;
 }
-body div#content.main section.main-contents .container div.notice div.data ul.gall-list li {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.gall-list li {
   border-bottom: 1px solid #ccc;
 }
-body div#content.main section.main-contents .container div.notice div.data ul.gall-list li a {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.gall-list li a {
   display: block;
   height: 5.71428571rem;
   padding: 0.71428571rem 0 0.71428571rem 5rem;
@@ -1324,14 +1337,14 @@ body div#content.main section.main-contents .container div.notice div.data ul.ga
   position: relative;
 }
 @media all and (min-width: 1200px) {
-  body div#content.main section.main-contents .container div.notice div.data ul.gall-list li a {
+  body div#content.main section.main-contents .container div.notice div.tab-content ul.gall-list li a {
     font-size: 16px;
     height: 121px;
     padding: 10px 0 10px 120px;
     font-weight: 600;
   }
 }
-body div#content.main section.main-contents .container div.notice div.data ul.gall-list li a img {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.gall-list li a img {
   position: absolute;
   left: 0;
   top: 0.71428571rem;
@@ -1339,13 +1352,13 @@ body div#content.main section.main-contents .container div.notice div.data ul.ga
   height: 4.28571429rem;
 }
 @media all and (min-width: 1200px) {
-  body div#content.main section.main-contents .container div.notice div.data ul.gall-list li a img {
+  body div#content.main section.main-contents .container div.notice div.tab-content ul.gall-list li a img {
     top: 10px;
     width: 100px;
     height: 100px;
   }
 }
-body div#content.main section.main-contents .container div.notice div.data ul.gall-list li a i {
+body div#content.main section.main-contents .container div.notice div.tab-content ul.gall-list li a i {
   display: block;
   font-size: 0.85714286rem;
   margin: 0.42857143rem 0 0;
@@ -1353,20 +1366,33 @@ body div#content.main section.main-contents .container div.notice div.data ul.ga
   color: #555;
 }
 @media all and (min-width: 1200px) {
-  body div#content.main section.main-contents .container div.notice div.data ul.gall-list li a i {
+  body div#content.main section.main-contents .container div.notice div.tab-content ul.gall-list li a i {
     font-size: 14px;
     font-weight: 400;
   }
 }
-body div#content.main section.main-contents .container div.notice div.data > a {
+body div#content.main section.main-contents .container div.notice div.tab-content a.more {
   font-size: 0;
   position: absolute;
   right: 0;
   top: 0.28571429rem;
   color: #555;
 }
-body div#content.main section.main-contents .container div.notice div.data > a i {
+body div#content.main section.main-contents .container div.notice div.tab-content a.more i {
   font-size: 1.42857143rem;
+}
+body div#content.main section.main-contents .container div.notice div.tab-content#tab02 a.tablink,
+body div#content.main section.main-contents .container div.notice div.tab-content#tab04 a.tablink {
+  left: 5.71428571rem;
+}
+@media all and (min-width: 1200px) {
+  body div#content.main section.main-contents .container div.notice div.tab-content#tab02 a.tablink,
+  body div#content.main section.main-contents .container div.notice div.tab-content#tab04 a.tablink {
+    left: 120px;
+  }
+}
+body div#content.main section.main-contents .container div.notice div.tab-content.active ul.list {
+  display: block;
 }
 @media all and (min-width: 1200px) {
   body div#content.main section.main-contents .container div.press {
@@ -4740,7 +4766,7 @@ body div#content.sub section.sub-content.wcenter .container div#tab01 dl dd.goal
   vertical-align: top;
   margin: 0 auto 1.42857143rem;
   width: 15.42857143rem;
-  padding: 12.85714286rem 0 0;
+  padding: 16.42857143rem 0 0;
   font-size: 1.28571429rem;
   font-weight: 400;
 }
@@ -4749,7 +4775,7 @@ body div#content.sub section.sub-content.wcenter .container div#tab01 dl dd.goal
     display: inline-block;
     text-align: center;
     position: relative;
-    top: -60px;
+    top: -90px;
     margin: 0 auto -40px;
   }
 }
@@ -7206,6 +7232,10 @@ body div#content.sub section.sub-content.board-view .container div.text p {
 body div#content.sub section.sub-content.board-view .container div.text p.mov {
   text-align: center;
   margin: 1.42857143rem 0;
+}
+body div#content.sub section.sub-content.board-view .container div.text p.sr-info {
+  text-align: center;
+  color: #004D3B;
 }
 body div#content.sub section.sub-content.board-view .container div.text div.g-post {
   text-align: center;
