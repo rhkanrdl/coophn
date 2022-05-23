@@ -61,6 +61,8 @@ $(document).ready(function() {
           ]
     });
 
+    
+
 
     $('.gall-slider').slick({
         accessibility: false,
