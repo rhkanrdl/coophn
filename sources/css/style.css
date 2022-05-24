@@ -6450,6 +6450,25 @@ body div#content.sub section.sub-content.dm .container div.infotext p {
   margin: 0;
   padding: 0;
 }
+
+body div#content.sub section.sub-content.dm .container div.shop {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+body div#content.sub section.sub-content.dm .container div.shop a {
+  text-align: center;
+  display: block;
+  width: 240px;
+  height: 64px;
+  border-radius: 12px;
+  background-color: #30A087;
+  font-size: 22px;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 15px;
+}
+
 body div#content.sub section.sub-content.dm .container ul.steps {
   padding: 0;
   margin: 2.85714286rem auto 4.28571429rem;
