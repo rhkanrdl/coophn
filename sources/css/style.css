@@ -7223,7 +7223,7 @@ body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li d
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li div p.bg {
     width: 400px;
-    height: 260px;
+    height: 280px;
     display: inline-block;
   }
 }
@@ -7275,7 +7275,7 @@ body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li d
 }
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li div .ball {
-    top: 60px;
+    top: 70px;
     left: 320px;
     width: 140px;
     height: 140px;
@@ -7326,7 +7326,7 @@ body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li .
 @media (min-width: 1200px) {
   body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li .cafe-text > p {
     padding: 0;
-    font-size: 18px;
+    font-size: 16px;
     display: block;
   }
 }
@@ -7354,6 +7354,9 @@ body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li .
 }
 body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li .cafe-text > p a {
   color: #0082A8;
+}
+body div#content.sub section.sub-content.mediacafe div.cafe-outline ul.item li .cafe-text.lh p {
+  line-height: 1.4;
 }
 body div#content.sub section.sub-content.comm .container div#tab01 div.gray-box {
   background: #f4f4f4;
